@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador de Películas</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <header>
+        <h1>Panel de Administrador</h1>
+    </header>
+    <main>
+        <section id="add-movie-section">
+            <h2>Añadir/Editar Película</h2>
+            <form id="movie-form">
+                <input type="hidden" id="movie-id">
+                <input type="text" id="movie-name" placeholder="Nombre de la película" required>
+                <input type="url" id="movie-link" placeholder="URL de la película" required>
+                <button type="submit">Guardar</button>
+            </form>
+        </section>
+        <section id="movie-list-section">
+            <h2>Lista de Películas</h2>
+            <div id="admin-movie-list"></div>
+        </section>
+    </main>
+    <button id="theme-toggle" class="theme-toggle">Toggle Theme</button>
+    <script src="admin.js"></script>
+</body>
+</html>
